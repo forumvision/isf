@@ -179,7 +179,7 @@ function onColumnHeaderClicked( ev ) {
     const end = performance.now();
     console.log( "Sorted table rows in %d ms.",  end - start );
 
-    const allTh = table.querySelectorAll( ':scope > thead > tr > th' );
+    const allTh = table.querySelectorAll( 'thead > tr > th' );
     for( let th2 of allTh ) {
         delete th2.dataset['sort'];
     }
@@ -204,7 +204,7 @@ function sortTableRowsByColumn( table, columnIndex, ascending ) {
 		}
     }
 
-    const rows = Array.from( table.querySelectorAll( ':scope > tbody > tr' ) );
+    const rows = Array.from( table.querySelectorAll( 'tbody > tr' ) );
 
 	rows.sort( ( x, y ) => {
         const xValue = x.cells[columnIndex].textContent;
@@ -868,7 +868,7 @@ Annie Lennox	 Why	HG7I4oniOyA	AKH	G05R03	9621860	78	2
 Orphaned Land	 Est Arabim	nBh2oAvsSSc	JIG	G05R03	9621860	72	3	
 Billy Bragg	 Never Buy The Sun	nBh2oAvsSSc	MAR	G05R03	9621860	69	4	
 Lou Reed	 Waves of Fear	kpUuWYrv1cQ	GRU	G05R03	9621860	69	4	
-Led Zepplin	 Bron-Y-Aur-Stomp	NbQ0Cb6h3Ew	DAM	G05R03	9621860	67	6	
+Led Zeppelin	 Bron-Y-Aur-Stomp	NbQ0Cb6h3Ew	DAM	G05R03	9621860	67	6	
 Paladran	 Kuthan	ylSta66Zq-o	KLI	G05R03	9621860	64	7	
 Bleu	 I Won't Go Hollywood	_mjvtzA5pd4	PAN	G05R03	9621860	59	8	
 Dennis Pavao	 Puna Ku'u Aloha	wLM-q7U8C4Q	BUB	G05R03	9621860	51	9	
@@ -2306,7 +2306,7 @@ Steve Vai	 Dark Matter	4aINCu8CoTA	DUM	G15R01	12587228	51	8
 Kings of Convenience	 Homesick	oll6UfK6iUg	THE	G15R01	12587228	46	9	
 The Collapsable Hearts Club	 Easy Street	AXTfh_UNTZU	BEE	G15R01	12587228	41	10	
 Dreamtrak	 Open Source	Kp7cXHd5l10	SQU	G15R01	12587228	41	10	
-Pani Poni Dash	 Kiroii Vacancies	jrU-zjWkSbA	LUC	G15R01	12587228	33	12	
+Pani Poni Dash!	 Kiiroi Vacances	jrU-zjWkSbA	LUC	G15R01	12587228	33	12	
 Inge & the TritoneKings	 Totenköpfchen	TUxOnM0daAk	KLI	G15R01	12587228	28	13	
 Pokey LaFarge	 Garbage Man Blues	jckFQ2U4z5I	CAP	G15R02	12600832	97	1	
 The Brothers Osborne	 Shoot Me Straight	zitOhu48uSY	ART	G15R02	12600832	79	2	
@@ -2641,7 +2641,7 @@ Jeff Russo · Dan Stevens · Navid Negahban	 Behind Blue Eyes	gP13Vd4fIoY	THE	G1
 Headless Chickens	 Choppers	1FwzZpf8yFY	ART	G17R01	12937317	26	11	
 Jeff Scott Soto, Bruce Kulick, Bob Kulick, Chris Wyse, Ray Luzier	 We Wish You A Merry Xmas	avuYonYl6Ys	KLI	G17R01	12937317	25	12	
 Elephant Gym	 Ocean in the Night	zE-LFH5LXNQ	XJX	G17R02	12952277	92	1	
-Kitty, Daisy, & Lewis	 I'm Coming Home	lBAxSNbZOj0	CAP	G17R02	12952277	81	2	
+Kitty, Daisy & Lewis	 I'm Coming Home	lBAxSNbZOj0	CAP	G17R02	12952277	81	2	
 Balligomingo	 Beyond	cs91zwI7ORI	ART	G17R02	12952277	73	3	
 Guilhem Desq	 Omen	ypuaJLHK_LQ	BEE	G17R02	12952277	69	4	
 Weeping Willows	 While I'm Still Strong	c0MqWrxJ2ko	MAR	G17R02	12952277	64	5	
