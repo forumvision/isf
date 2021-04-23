@@ -6,6 +6,8 @@
 	
     <link rel="shortcut icon" href="data:image/png;base64,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">
 
+    <base target="_blank">
+    
 <style>
 	body {background:#000; color:#999; margin: 0 !important; padding: 0 !important;}
 	a {color:#999; text-decoration: underline;}
@@ -167,42 +169,36 @@ body.appendChild(scrollableContainer);
 function onColumnHeaderClicked( ev ) {
 
     const th = ev.currentTarget;
-    const table = th.closest( 'table' );
-    const thIndex = Array.from( th.parentElement.children ).indexOf( th );
-
-    const ascending = !( 'sort' in th.dataset ) || th.dataset.sort != 'asc';
     
-    const start = performance.now();
-
-    sortTableRowsByColumn( table, thIndex, ascending );
-
-    const end = performance.now();
-    console.log( "Sorted table rows in %d ms.",  end - start );
-
-    const allTh = table.querySelectorAll( 'thead > tr > th' );
-    for( let th2 of allTh ) {
-        delete th2.dataset['sort'];
-    }
- 
-    th.dataset['sort'] = ascending ? 'asc' : 'desc';
+    if (th.innerText !== "...") {
+      th.style.color="yellow";
+      th.style.textDecoration="none";
+      const orTxt = th.innerText;
+      th.innerText = "...";
+      
+      const table = th.closest( 'table' );
+      const thIndex = Array.from( th.parentElement.children ).indexOf( th );
+  
+      const ascending = !( 'sort' in th.dataset ) || th.dataset.sort != 'asc';
+      
+      window.setTimeout(function() {
+        
+        sortTableRowsByColumn( table, thIndex, ascending, orTxt );
+        
+        
+      }, 1);
+  
+      const allTh = table.querySelectorAll( 'thead > tr > th' );
+      for( let th2 of allTh ) {
+          delete th2.dataset['sort'];
+      }
+   
+      th.dataset['sort'] = ascending ? 'asc' : 'desc';
+	}
 	
 }
 
-function sortTableRowsByColumn( table, columnIndex, ascending ) {
-
-    for (var i=0; i<tableHeader.rows[0].cells.length; i++) {
-		if (i==columnIndex) {
-            tableHeader.rows[0].cells[i].style.color = "#fff";
-			if (ascending) {
-				tableHeader.rows[0].cells[i].style.textDecoration = "underline";
-			} else {
-				tableHeader.rows[0].cells[i].style.textDecoration = "overline";
-			}
-		} else {
-            tableHeader.rows[0].cells[i].style.color = "#999";
-			tableHeader.rows[0].cells[i].style.textDecoration = "none";
-		}
-    }
+function sortTableRowsByColumn( table, columnIndex, ascending, colTxt ) {
 
     const rows = Array.from( table.querySelectorAll( 'tbody > tr' ) );
 
@@ -228,6 +224,23 @@ function sortTableRowsByColumn( table, columnIndex, ascending ) {
     for( let row of rows ) {
         table.tBodies[0].appendChild( row );
     }
+	
+    for (var i=0; i<tableHeader.rows[0].cells.length; i++) {
+		if (i==columnIndex) {
+            tableHeader.rows[0].cells[i].style.color = "#fff";
+            tableHeader.rows[0].cells[i].innerText = colTxt;
+			if (ascending) {
+				tableHeader.rows[0].cells[i].style.textDecoration = "underline";
+			} else {
+				tableHeader.rows[0].cells[i].style.textDecoration = "overline";
+			}
+		} else {
+            tableHeader.rows[0].cells[i].style.color = "#999";
+			tableHeader.rows[0].cells[i].style.textDecoration = "none";
+		}
+    }
+    
+	
 }
 
 
@@ -2937,6 +2950,197 @@ Hudson Mohawke & S-Type	The Rain	bXfJfUDu1KM	THE	G18R12	13294465	48	10
 Alexandra	Der Traum Vom Fliegen	guE3ig4zTbc	CHI	G18R12	13294465	46	11	
 Hoodoo Gurus	I Want You Back	uZWXa7x4LME	AUN	G18R12	13294465	43	12	
 Flying Pickets	Only You	qgDKtLPp46s	MAR	G18R12	13294465	30	13	
+Hot Club De Piracicaba	Paganini In Gypsy Jazz Style	aHwzzSYhHrs	DUM	G19R01	13320589	116	1	
+Black Pumas	Fire	r5lwBr0qg44	XJX	G19R01	13320589	88	2	
+Antonio Carlos Jobim	Waters Of March	6F1-sWdV1CI	VAR	G19R01	13320589	80	3	
+Mohsen Namjoo	Toranj	x0MSe6PmNEU	ORP	G19R01	13320589	74	4	
+The Naked And Famous	Hearts Like Ours	gqUJdcCjUIA	MYR	G19R01	13320589	71	5	
+Peyrson	Postcards From Italy (Beirut Cover)	ybhVsZHnC7k	SWO	G19R01	13320589	68	6	
+Sully Erna	7 Years	IPymgAssr3c	FAY	G19R01	13320589	66	7	
+Leon Russel	This Masquerade	tn-br0h4rZk	AUN	G19R01	13320589	63	8	
+Dream Academy	Please, Please, Please, Let Me Get What I Want (Instrumental)	H1gEzv0FJNs	MAR	G19R01	13320589	54	9	
+Stephanie Mabey	I Pushed The Button	CpU4dQYtDYY	BEE	G19R01	13320589	45	10	
+Ludwig Van Beethoven (Ekaterina Skliar & Anna Kislitsyna)	Sonatina For Mandolin And Clavier In C Major WoO 44a	WRkg2ygoS2c	GRU	G19R01	13320589	44	11	
+Cardiacs	Tarred And Feathered	NVjSycDJatc	SHE	G19R01	13320589	40	12	
+Mariza	Ó Gente Da Minha Terra (Live)	S2Ip-uUhaoI	ELG	G19R01	13320589	39	13	
+Enemy Radio	Born Woke	V3W14Xm_UU8	SQU	G19R01	13320589	36	14	
+Crash Test Dummies	God Shuffled His Feet	UL80p4wHda4	MIK	G19R01	13320589	24	15	
+Mysterya	In My Head	EO-NWTAJ688	KLI	G19R01	13320589	20	16	
+Cannonball Adderly, Miles Davis, Hank Jones, Sam Jones, Art Blakey	Love For Sale	Z3TTnMY9ptg	GRU	G19R02	13333328	101	1	
+Kandace Springs	Love Got In The Way	a2kqizaV06I	DUM	G19R02	13333328	99	2	
+Frank Zappa	Watermelon In Easter Hay	N9e62HJ1Ncw	FAY	G19R02	13333328	90	3	
+Nanowar Of Steel	Valhalleluja	S9WWz95ripA	BEE	G19R02	13333328	72	4	
+Dust	From A Dry Camel	7JMQMD94YCE	MIK	G19R02	13333328	69	5	
+Tenebrae Choir	Miserere Mei, Deus (Allegri)	H3v9unphfi0	SWO	G19R02	13333328	66	6	
+Marcus King	One Day She's Here	mT_YG6UqhB4	XJX	G19R02	13333328	64	7	
+Thelma Plum	Better In Blak	ExMjEwymQ3A	ORP	G19R02	13333328	57	8	
+Pink Floyd	See Emily Play	mogwu_IN8As	SHE	G19R02	13333328	52	9	
+Grupo Galé	Ven A Medellin	jCpzWv70TbE	ELG	G19R02	13333328	50	10	
+Return To Forever	Theme To The Mothership	Q-wW7ZjiaL8	AUN	G19R02	13333328	47	11	
+Silver Apples	I Don't Care What The People Say	1kA7qUdrtPg	SQU	G19R02	13333328	44	12	
+Modern English	Ink And Paper	Zrss1jrdpxs	MAR	G19R02	13333328	41	13	
+Robert Glasper Experiment	Calls	e6NjqujEy1o	VAR	G19R02	13333328	40	14	
+Wax	Who Is Next	ph-hIp-Nq9I	MYR	G19R02	13333328	26	15	
+Fusnota	A Child Will Show The Way	eQ_7QuJpylc	KLI	G19R02	13333328	10	16	
+Witch	Chifundo	JjEnjX-4EDI	SQU	G19R03	13343239	109	1	
+Gary Clark, Jr And The Roots	This Land (Nsfw)	JXGgRrqugxE	XJX	G19R03	13343239	100	2	
+Gurrumul	Djolin (Musical Instrument) In D Major	j8M_IO5Cwz4	ORP	G19R03	13343239	98	3	
+Becca Stevens W Snarky Puppy	I Asked	M2G_PquyIco	VAR	G19R03	13343239	74	4	
+The Indigo Girls	Thin Line	maGfM_gr-fA	FAY	G19R03	13343239	67	5	
+Curtis Salgado & Alan Hager	I Want My Dog To Live Longer (The Greatest Wish)	Q7-PfzpQcJs	DUM	G19R03	13343239	67	5	
+The Louvin Brothers	In The Pines	qWrSg5znyMU	GRU	G19R03	13343239	64	7	
+Emma Ruth Rundle	Heaven	yJ2iBB8fz-Q	SWO	G19R03	13343239	62	8	
+10cc	How Dare You!	wHn2tDN6BIE	MIK	G19R03	13343239	59	9	
+Luciano Pavarotti	Gesu Bambino	BhrZsH9iGYs	MYR	G19R03	13343239	49	10	
+Rockmelons	New Groove	TdLN2p33oAY	AUN	G19R03	13343239	48	11	
+Gem Club	Polly	j1Hy4MDXs14	ELG	G19R03	13343239	42	12	
+An Unkindness	Fragments	oBlxSwFM4xk	MAR	G19R03	13343239	41	13	
+Dan Bern	Never To Be Forgotten Kinda Year	_qH4yTkcIe4	BEE	G19R03	13343239	28	14	
+Elmo & Patsy	Grandma Got Run Over By A Reindeer	MgIwLeASnkw	SHE	G19R03	13343239	16	15	
+Christopher Lee	Jingle Hell	kfZtNVEqsBs	KLI	G19R03	13343239	4	16	
+Ylioppilaskunnan Laulajat	Pohjois-Karjala	wnUVbCnP5Ik	SWO	G19R04	13361110	123	1	
+Rob Dougan	Clubbed To Death Ii	7OtU7AjgJiI	MIK	G19R04	13361110	73	2	
+Anna Nalik	Stone	0WeSQ7F5_jw	ORP	G19R04	13361110	69	3	
+Mahavishnu Orchestra	One Word	GWT6xt6QMpQ	AUN	G19R04	13361110	66	4	
+Lake Street Dive	Godawful Things	8Nva0Y9ohbw	DUM	G19R04	13361110	64	5	
+Paul McCartney	Slidin'	Vvwqt9YvgeA	XJX	G19R04	13361110	63	6	
+Eva Hurychová	Chtěla Bych Být Robotem	nWHjJfj3f94	ELG	G19R04	13361110	63	6	
+The Liminanas Ft Nuria	Calentita	pPdOo2E5zOc	SQU	G19R04	13361110	61	8	
+Joni Mitchell	A Case Of You	f_OtHVLAF4o	GRU	G19R04	13361110	60	9	
+Kirsty MacColl	Walking Down Madison	1ploIlurVZ8	SHE	G19R04	13361110	59	10	
+Ben L'Oncle Soul	Barbie Girl	aUF1FKHXD18	BEE	G19R04	13361110	57	11	
+Toy Matinee	We Always Come Home	-PFQDoJYd70	FAY	G19R04	13361110	51	12	
+Steely Dan	Almost Gothic	UL33dIYfoCo	VAR	G19R04	13361110	44	13	
+Warren Zevon	Indifference Of Heaven (Live)	aY4OHTYhn0g	MYR	G19R04	13361110	43	14	
+Bruce Woolley	Video Killed The Radio Star	1HLwljnmzR8	MAR	G19R04	13361110	30	15	
+Analgesia	Wellhorld	Xt1MA5WLYQw	KLI	G19R04	13361110	2	16	
+Wanda Jackson	Hard Headed Woman	pzJ3hiqsi0U	GRU	G19R05	13376871	84	1	
+Goddamn Gallows	Dreadful Sinner	lWeIjyHTVec	BEE	G19R05	13376871	75	2	
+Al Stewart	Broadway Hotel	bxdkCaN_msc	MYR	G19R05	13376871	74	3	
+Les Amazones D'Afrique ft. Mamani Keïta	Love	JCsOo195X5o	SQU	G19R05	13376871	71	4	
+Berklee Indian Ensemble	5 Peace Band	dn_1O3J56E8	DUM	G19R05	13376871	65	5	
+Frank Zappa	Inca Roads	wqp71DOJ3aY	AUN	G19R05	13376871	65	5	
+Kokoroko Afrobeat Collective	Colonial Mentality	zUnKDK1iklo	ELG	G19R05	13376871	61	7	
+John Hammond	Til The Money Runs Out	pGKqv0p4Q-k	SWO	G19R05	13376871	59	8	
+FKJ And Tom Misch	Losing My Way	X4Q7d0CtYyk	VAR	G19R05	13376871	59	8	
+Molly Tuttle	Fake Empire (The National)	io3hvuzlfxg	XJX	G19R05	13376871	54	10	
+Kamasi Washington	Truth	rtW1S5EbHgU	ORP	G19R05	13376871	52	11	
+Butthole Surfers	Dracula From Houston	oON0QqYu-Us	MAR	G19R05	13376871	52	11	
+Blackskull	Memory Of Twilight	NrcGCSRYgh8	KLI	G19R05	13376871	45	13	
+Shadowy Men On A Shadowy Planet	Honey You're Wasting Ammo	gPOmsLfxEpA	MIK	G19R05	13376871	42	14	
+Dave Matthews Band	Time Of The Season	kwMkj5_pxfg	FAY	G19R05	13376871	40	15	
+She Past Away	Katarsis	t7mPRAiwPdk	SHE	G19R05	13376871	30	16	
+Beth & Joe	Give It Everything You Got	fHjD_M_0J70	DUM	G19R06	13389245	93	1	
+The Roches	Moonswept	51sV8MpnYMU	FAY	G19R06	13389245	85	2	
+Taylor Davis	Journey Medley	PGrjI_uEU80	BEE	G19R06	13389245	81	3	
+Guthrie Govan	Wonderful Slippery Thing	g1-O-juptmY	XJX	G19R06	13389245	80	4	
+Ani DiFranco	Glass House	PtIoFWOuZAc	MYR	G19R06	13389245	68	5	
+Metropole Orchestra ft. The Beau Hunks Saxtette	Powerhouse	tS2yY7fkRMM	MIK	G19R06	13389245	65	6	
+Deyosan	Kleef	q_Iwg78lA8Y	SWO	G19R06	13389245	63	7	
+Nisea	Mana	PQPOGBmrjRU	KLI	G19R06	13389245	56	8	
+Wynton & Ellis Marsalis	On Peanuts Playground	7JuYJxf_jIA	VAR	G19R06	13389245	53	9	
+Primus	Winona's Big Brown Beaver	aYDfwUJzYQg	AUN	G19R06	13389245	48	10	
+A. Zenios, M. Kostraki, S. Siolas, E. Tsaligopoulou, M. Famellos	Don Giuseppe	BEHyXfQMe7w	ELG	G19R06	13389245	44	11	
+Groove Armada	At The River	m-uztVX6QFQ	MAR	G19R06	13389245	40	12	
+Big Thief	Not	UIcVwH47uxQ	ORP	G19R06	13389245	40	12	
+The Cleverlys	Forget You	Sl-XWy5fTQQ	SHE	G19R06	13389245	40	12	
+Steve Goodman	My Old Man	SAxKDLiwrhw	GRU	G19R06	13389245	38	15	
+Pixx	I Bow Down	8IgvP_LFikU	SQU	G19R06	13389245	34	16	
+Corea And Hiromi	Old Castle, By The River, In The Middle Of A Forest	0KmBV1j5UMI	AUN	G19R07	13406515	95	1	
+Ludovico Einaudi	Divenire	X1DRDcGlSsE	ELG	G19R07	13406515	80	2	
+The Pointer Sisters	Little Pony	NCel0f3qmtQ	DUM	G19R07	13406515	79	3	
+King Curtis	Memphis Soul Stew	4Sm9n-6hy6M	FAY	G19R07	13406515	79	3	
+The Proclaimers	There's A Touch	n64ntR-5Mdo	MAR	G19R07	13406515	77	5	
+Zappa Internet Jam	G-Spot Tornado	7QFnYZSV6Js	MIK	G19R07	13406515	75	6	
+The Flaming Lips	Do You Realize?	lPXWt2ESxVY	ORP	G19R07	13406515	75	6	
+The Bengsons	Money Coming In	25qlsifoFCQ	SWO	G19R07	13406515	72	8	
+Pint And Dale	The Ballad Of Harbo And Samuelsen	gYSr8QMfnKs	MYR	G19R07	13406515	69	9	
+Here Come The Mummies	Kinda Lingers	YL0sAtlbxjE	BEE	G19R07	13406515	55	10	
+Father John Misty	I Love You Honeybear	khk77JHALmU	XJX	G19R07	13406515	45	11	
+Louis Cole	When You're Ugly	vS4NxiURhEw	VAR	G19R07	13406515	39	12	
+Asa-Chang & Junray	事件	D1R30hs-FFM	SQU	G19R07	13406515	29	13	
+Jimmy Durante And Frank Sinatra	A Song's Gotta Come From The Heart	NcFVHQkwS_U	GRU	G19R07	13406515	27	14	
+XTC	Grass	nyvgFFAzwzA	SHE	G19R07	13406515	23	15	
+Operus	Phantasia	uH403joXDbA	KLI	G19R07	13406515	9	16	
+Tony Allen	Politely	zINzk3gWmJw	ELG	G19R08	13417679	103	1	
+Hassak	Amanat	Kz7Bt-zERQc	ORP	G19R08	13417679	86	2	
+Wicked Dub Division Meets North East Ska Jazz Orchestra	Mama	KpYaj-hsIkA	DUM	G19R08	13417679	80	3	
+Lisa Hannigan ft. Loah	Undertow	UwaBoX97PbQ	SWO	G19R08	13417679	78	4	
+Tedeschi Trucks Band	Midnight In Harlem	K1J04ugcdi8	FAY	G19R08	13417679	70	5	
+Unleash The Archers	Northwest Passage	XRD3vrSLPaw	BEE	G19R08	13417679	65	6	
+Sarah Vaughan	Tenderly	gNcSFjsBJtk	VAR	G19R08	13417679	59	7	
+Kansas	Miracles Out Of Nowhere	jseTa7HUIDU	MYR	G19R08	13417679	53	8	
+The Insects	A Lyke Wake Dirge	kr3deapIlIM	MAR	G19R08	13417679	50	9	
+Johnny Cash	Mean-Eyed Cat	Adq8BBfGANI	GRU	G19R08	13417679	46	10	
+Tratas	Introduction To The Soniverse	RdaGv1Wx8ps	AUN	G19R08	13417679	44	11	
+Jd Simo	One Of Those Days	lwJ6xztg5hg	XJX	G19R08	13417679	43	12	
+Critton Hollow String Band	Johnny Cope	7M-BLtVjuW0	SQU	G19R08	13417679	34	13	
+Golden Earring	Are You Receiving Me?	mbJYPDjV030	MIK	G19R08	13417679	34	13	
+Motörhead	Eat The Rich	Wh3t49NsWBA	SHE	G19R08	13417679	22	15	
+Yawarhiem	Darkness, Blood & Tears	gaF-KhuI7Tc	KLI	G19R08	13417679	3	16	
+Bokanté	Vayan	HghxO7oeEH8	DUM	G19R09	13429370	102	1	
+Cubaneros	Lost On You	K_r2pQkI-G8	GRU	G19R09	13429370	92	2	
+Inma Cuesta	Una De Esas Noches Sin Final	oS9ikzSxEmk	SWO	G19R09	13429370	79	3	
+The Waterboys	The Whole Of The Moon	pu7AR0-FRro	ORP	G19R09	13429370	79	3	
+Robin Trower	Too Rolling Stoned	Rb4ii3M5Dh8	AUN	G19R09	13429370	73	5	
+Giorgos, Nikos & Adonis Xylouris / Nederlands Blazers Ensemble	Chaniotiko Syrto	pDNAim3oano	ELG	G19R09	13429370	72	6	
+Girl In Red	Serotonin	wehVzQt4Czg	XJX	G19R09	13429370	68	7	
+John Coltrane & Johnny Hartman	Lush Life	kzi4pgpW4qY	VAR	G19R09	13429370	66	8	
+Neil Diamond	Hell Yeah	VEVNcbo_Tas	MYR	G19R09	13429370	65	9	
+Bab L'bluz	Gnawa Beat	qWNGiD6CiQA	SQU	G19R09	13429370	56	10	
+Forbidden Saints	Armor Of Faith	31gosX6oJYk	FAY	G19R09	13429370	48	11	
+Diabolus	Sombras Indigentes	EcqbjEezfa4	KLI	G19R09	13429370	45	12	
+Z Berg	All Out Of Tears	zPXL1RU0j08	BEE	G19R09	13429370	41	13	
+Wee Willie Harris	I Go Ape	PPj93ylskMU	SHE	G19R09	13429370	27	14	
+Dean Gitter	The Reaper's Ghost	VcCuoYQvI7g	MAR	G19R09	13429370	15	15	
+Nick Lutsko	Sideshow	b2qnx3yVGzg	BEE	G19R10	13439349	80	1	
+Playing For Change	Guantanamera	blUSVALW_Z4	GRU	G19R10	13439349	78	2	
+Larkin Poe	She's A Self Made Man	rQgnpQEHzPk	DUM	G19R10	13439349	77	3	
+Beats Antique	Beauty Beats	gxlRqplypnk	SWO	G19R10	13439349	74	4	
+Tielman Brothers	Rollin Rock	muKkVufgkAE	SHE	G19R10	13439349	73	5	
+The Art Of Noise	One Earth	L_BX8YNQiVk	MIK	G19R10	13439349	68	6	
+Thomas Dolby	Eastern Bloc	dAF7wdNcYDU	XJX	G19R10	13439349	64	7	
+Jacob Collier	In The Real Early Morning	NSbxiFjA1ZQ	VAR	G19R10	13439349	62	8	
+Dave	Black	pDUPSNdmFew	ORP	G19R10	13439349	62	8	
+Nikolai Rimsky-Korsakov (London Symphony Orchestra/Yan Pascal Tortelier)	Song Of India/Song Of The Indian Guest	YBpN9-XOIqQ	ELG	G19R10	13439349	57	10	
+Dan Hicks And The Hot Licks	Moody Richard	RDL11xT0s9E	FAY	G19R10	13439349	56	11	
+Cassandra Wilson	Harvest Moon	diL0Z738C3U	MYR	G19R10	13439349	52	12	
+[Unknown Artist]	[Unknown Title]	Ivg-Z_KG_9A	SQU	G19R10	13439349	47	13	
+Oh Wonder	All We Do	X_M2MJo-_V8	MAR	G19R10	13439349	32	14	
+Grover Washington Jnr	Let It Flow	9TyixAXsS8k	AUN	G19R10	13439349	24	15	
+Iced Warm	Plague	xaTW7dixcr8	KLI	G19R10	13439349	22	16	
+Black Flower	Maqam Tizita Saba	MyMWb1yglhk	ELG	G19R11	13450233	88	1	
+Yello (With Shirley Bassey)	The Rhythm Divine	smwR21SDqEY	MIK	G19R11	13450233	81	2	
+Ghost Quartet	Starchild	ZCJK7xofmXo	BEE	G19R11	13450233	80	3	
+Nick Cave	There She Goes My Beautiful World	EbzM5jIB7c0	ORP	G19R11	13450233	78	4	
+Fortune/Walker/Rogers/Isaacs	Elizabeth	8VmRUOmVed0	DUM	G19R11	13450233	78	4	
+Covet	Parachute	V-lpxJA-AjA	XJX	G19R11	13450233	75	6	
+Dikalo	Old Fisher Man	X7RPeLQOj20	GRU	G19R11	13450233	70	7	
+Redgum	Killing Floor	erheUIcN9oA	MAR	G19R11	13450233	66	8	
+Quincy Jones & Toots Thielemans	Velas	Qvc077Z4YyU	VAR	G19R11	13450233	62	9	
+Tas Cru	That Lovin Thang	yIYwuPFJ47g	FAY	G19R11	13450233	58	10	
+Hüsnü Şenlendirici	Hatıran Yeter	lITK1pWM-LY	SWO	G19R11	13450233	52	11	
+Klaus Nomi	Total Eclipse	HmLk2vSXXtk	SHE	G19R11	13450233	45	12	
+Pip Blom	I Think I'm In Love	yWF3TsUYx6Y	SQU	G19R11	13450233	45	12	
+Eclipse	Prithibir Prohor	q0Rk1x8e9-M	KLI	G19R11	13450233	30	14	
+Tism	Defecate On My Face	2qgsebueN-o	AUN	G19R11	13450233	12	15	
+Rick Wakeman, Thomas Powell, Thomas Grey	Elegy- Written In A Country Churchyard	-z3Zr4HXifo	MYR	G19R11	13450233	8	16	
+Bendigo Fletcher	Evergreen	5VckUGU7UDo	SWO	G19R12	13462569	91	1	
+Quarteto Novo	Fica Mal Com Deus	lFr3ty1uUz8	VAR	G19R12	13462569	90	2	
+King Crimson	Three Of A Perfect Pair	QdMHy074kNc	MIK	G19R12	13462569	74	3	
+Hazel English	I'm Fine	lYcp1bUb4lU	SQU	G19R12	13462569	74	3	
+Wynton Marsalis	Put Down The Duckie	bciVZbsDJSM	MYR	G19R12	13462569	72	5	
+Kolinga ft. Booboo'zzz All Stars	Time	eRH6Uf5HqOY	ELG	G19R12	13462569	67	6	
+Hizaki	Rusalka	z3NQSqnbBPE	KLI	G19R12	13462569	65	7	
+Middle Kids	Bad Neighbours	DyrOiKAxFeQ	ORP	G19R12	13462569	64	8	
+The Dreadnoughts	Sleep Is For The Weak	qLOX3zDiZf8	BEE	G19R12	13462569	62	9	
+Daniel Kahn & Sveta Kundish	Mentshn-Fresser	RaYmQNgCtnQ	GRU	G19R12	13462569	62	9	
+The Manhattan Transfer	Tequila	goM3YoVEa2g	DUM	G19R12	13462569	57	11	
+Kasabian	You're In Love With A Psycho	kimPUWSwxIs	XJX	G19R12	13462569	48	12	
+King Missile	Detachable Penis	mIUk08iYZKE	MAR	G19R12	13462569	39	13	
+Lemon Demon	The Ultimate Showdown	lrzKT-dFUjE	FAY	G19R12	13462569	38	14	
+Takeo Ischi	New Bibi Hendl	Ppm5_AGtbTo	SHE	G19R12	13462569	23	15	
+Supercharge	She Moved The Dishes First	9_Kz0e3Tq30	AUN	G19R12	13462569	2	16	
 `;
 
 }
